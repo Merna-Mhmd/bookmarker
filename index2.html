@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+<div class="container m-auto w-75 p-3">
+    <div class="header">
+        <h3 class="text-body-tertiary">Bookmarker</h3>
+    </div>
+    
+    <div class="bg-light-subtle p-5 m-4 item">
+        <h2 class="text-center m-4">Bookmark your favorite sites</h2>
+        <form id="myform">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="text-black form-label text-center">Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+              </div>
+              <div class="alert alert-danger text-center d-none" id="alertValid"  role="alert">
+             Name is required
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="text-black form-label text-center">Site URL</label>
+                <input type="text" class="form-control" onblur="urlValidation()" id="siteUrl" placeholder="website url">
+              </div>
+              <div class="alert alert-danger text-center d-none" id="alertVallid" role="alert">
+              URL field is required
+              </div>
+        </form>
+        <button id="btn" type="submit" class=" btn btn-primary text-center"> Submit</button>
+    </div>
+
+</div>
+
+
+
+
+<div class="container">
+  
+            <div >
+                <div class="table-responsive">
+                    <table class="table w-75 m-auto bg-light-subtle p-4 text-center">
+                   
+                        <tbody id="results" >
+                           
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            
+     
+</div>
+
+
+
+
+
+<footer class="footer m-auto w-75">
+<p>© 2019 Bookmarker Inc.</p>
+</footer>
+<!-- js -->
+<script src="js/script2.js"></script>
+</body>
+</html>
